@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 /*Definindo as linhas*/
 line1 = ['Lista de Produtos', 'QTD Entradas', 'QTD Saídas', 'Saldo Estoque', 'Preço Unitário', 'Subtotal']
 line2 = ['Azeite de Oliva - Extra Virgem LAT 500ml', 100, 40, 60, 21.90, 1304.00]
@@ -9,8 +11,6 @@ line7 = ['Pão Sirio Integral -  Saco 500g', 100, 70, 30, 5.90, 177.00]
 line8 = ['Polpa de Açai Natural - PCT 5L', 100, 1, 99, 7.10, 639.00]
 line9 = ['Queijo Vegano| - PCT 450g', 100, 30, 70, 25.00, 1750.00]
 line10 = [ "","","","", 'Total', 5774.00]
-
-# -*- coding: utf-8 -*-
 
 /*Formatando as linhas*/
 def lines(line):

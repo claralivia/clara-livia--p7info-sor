@@ -1,1 +1,5 @@
-# clara-livia--p7info-sor
+## P7 Info - SOR
+Atividades
+
+
+# Olá, eu sou a Clara Lívia! 👋

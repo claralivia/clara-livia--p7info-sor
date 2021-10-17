@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 class Carro:
     '''Classe para calcular o nível do tanque de gasolina de um carro'''
     def __init__(self, consumo):
