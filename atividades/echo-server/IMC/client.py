@@ -32,7 +32,7 @@ class App(Tk):
         s.close()
         texto = "O resultado do seu IMC é {:.2f},\nvocê está {}".format(answer['imc'], answer['msg'])
         self.lblAnswer = Label(self.container5, text=texto,
-                               font="Helvetica 12",
+                               font=self.fonte1,
                                bg='white')
         self.lblAnswer.pack()
 
@@ -45,6 +45,7 @@ class App(Tk):
 
     def initialize(self):
         self.fonte = "Helvetica 12 bold"
+        self.fonte1 = "Helvetica 12"
 
         self.container0 = Frame(None, padx=0, pady=0, bg='white')
         self.container0.pack()
@@ -91,7 +92,7 @@ class App(Tk):
 
         self.txtWeight = Entry(self.container2,
                                width=25,
-                               font=self.fonte,
+                               font=self.fonte1,
                                bg='#F5F5F5')
         self.txtWeight.pack(side=LEFT)
 
@@ -102,7 +103,7 @@ class App(Tk):
 
         self.txtHeigth = Entry(self.container3,
                                width=25,
-                               font=self.fonte,
+                               font=self.fonte1,
                                bg='#F5F5F5')
         self.txtHeigth.pack(side=LEFT)
 

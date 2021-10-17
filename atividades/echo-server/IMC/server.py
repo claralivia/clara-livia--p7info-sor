@@ -30,17 +30,17 @@ while True:
         print("IMC calculado com sucesso!")
 
         if imcs['imc'] < 18.5:
-            imcs['msg'] = "abaixo do peso."
+            imcs['msg'] = "abaixo do peso. \nIsso é preocupante!"
         elif imcs['imc'] < 25:
-            imcs['msg'] = "no peso normal."
+            imcs['msg'] = "no peso normal. \nContinue assim!"
         elif imcs['imc'] < 30:
-            imcs['msg'] = "com sobrepeso."
+            imcs['msg'] = "com sobrepeso. \nAlerta!"
         elif imcs['imc'] < 35:
-            imcs['msg'] = "com obesidade de grau 1."
+            imcs['msg'] = "com obesidade de grau 1. \nCuide da sua alimentação!"
         elif imcs['imc'] < 40:
-            imcs['msg'] = "com obesidade de grau 2."
+            imcs['msg'] = "com obesidade de grau 2. \nVocê tem que se cuidar urgentemente."
         else:
-            imcs['msg'] = "com obesisdade de grau 3."
+            imcs['msg'] = "com obesidade de grau 3. \nVocê está correndo perigo!!!"
 
         conn.send(pickle.dumps(imcs))
 
