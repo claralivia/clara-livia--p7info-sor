@@ -7,7 +7,6 @@ port = 49000
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((host, port))
-
 s.listen()
 
 print("\nEcho server iniciado!", end="")
@@ -21,7 +20,7 @@ while True:
 
     if data['operator'] == "1":
         w = float(data['weight'])
-        h = float(data["height"])
+        h = float(data['height'])
 
         imcs = {}
         imcs['imc'] = w/(h*h)

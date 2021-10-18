@@ -31,7 +31,8 @@ class App(Tk):
 
         s.close()
         texto = "O resultado do seu IMC é {:.2f},\nvocê está {}".format(answer['imc'], answer['msg'])
-        self.lblAnswer = Label(self.container5, text=texto,
+        self.lblAnswer = Label(self.container5,
+                               text=texto,
                                font=self.fonte1,
                                bg='white')
         self.lblAnswer.pack()
@@ -42,6 +43,7 @@ class App(Tk):
     def clear(self):
         self.txtWeight.delete(0, END)
         self.txtHeigth.delete(0, END)
+        self.lblAnswer.destroy()
 
     def initialize(self):
         self.fonte = "Helvetica 12 bold"
@@ -64,20 +66,33 @@ class App(Tk):
         self.container6 = Frame(None, padx=0, pady=0, bg='white')
         self.container6.pack()
 
-        self.color1 = Label(self.container0, bg='#FF4500', width=20)
+        self.color1 = Label(self.container0,
+                            bg='#FF4500',
+                            width=20)
         self.color1.pack(side=LEFT)
-        self.color2 = Label(self.container0, bg='#FFD700', width=20)
+        self.color2 = Label(self.container0,
+                            bg='#FFD700',
+                            width=20)
         self.color2.pack(side=LEFT)
-        self.color3 = Label(self.container0, bg='#2E8B57', width=20)
+        self.color3 = Label(self.container0,
+                            bg='#2E8B57',
+                            width=20)
         self.color3.pack(side=LEFT)
 
-        self.color4 = Label(self.container6, bg='#FF4500', width=20)
+        self.color4 = Label(self.container6,
+                            bg='#FF4500',
+                            width=20)
         self.color4.pack(side=LEFT)
-        self.color5 = Label(self.container6, bg='#FFD700', width=20,
-                            text="Por Clara Lívia", font="Helvetica 9",
+        self.color5 = Label(self.container6,
+                            bg='#FFD700',
+                            width=20,
+                            text="Por Clara Lívia",
+                            font="Helvetica 9",
                             fg="white")
         self.color5.pack(side=LEFT)
-        self.color6 = Label(self.container6, bg='#2E8B57', width=20)
+        self.color6 = Label(self.container6,
+                            bg='#2E8B57',
+                            width=20)
         self.color6.pack(side=LEFT)
 
         self.titlee = Label(self.container1, text="Informe os dados:",
@@ -109,31 +124,28 @@ class App(Tk):
 
         self.bntBack = Button(self.container4, text="Sair",
                               font=self.fonte, width=12,
-                              command=self.back,
-                              bg="#FF4500",
+                              command=self.back, bg="#FF4500",
                               fg="white")
         self.bntBack.pack(side=LEFT)
 
         self.bntCalculate = Button(self.container4, text="Calcular",
                                    font=self.fonte, width=12,
-                                   command=self.calc,
-                                   bg="#FFD700",
+                                   command=self.calc, bg="#FFD700",
                                    fg="white")
         self.bntCalculate.pack(side=LEFT)
 
         self.bntClear = Button(self.container4, text="Limpar",
                                font=self.fonte, width=12,
-                               command=self.clear,
-                               bg="#2E8B57",
+                               command=self.clear, bg="#2E8B57",
                                fg="white")
         self.bntClear.pack(side=LEFT)
 
-        self.lblAnswer = Label(self.container00, text="",
-                               bg='white')
+        self.lblAnswer = Label(self.container00,
+                               text="", bg='white')
         self.lblAnswer.pack()
 
-        self.lblAnswer = Label(self.container5, text="",
-                               bg='white')
+        self.lblAnswer = Label(self.container5,
+                               text="", bg='white')
         self.lblAnswer.pack()
 
 
