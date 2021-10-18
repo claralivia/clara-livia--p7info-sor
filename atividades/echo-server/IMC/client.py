@@ -12,7 +12,7 @@ class App(Tk):
 
     def calc(self):
         host = socket.gethostname()
-        port = 50000
+        port = 49000
 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect((host, port))
@@ -85,7 +85,7 @@ class App(Tk):
                            bg='white')
         self.titlee.pack()
 
-        self.lblWeight = Label(self.container2, text="Massa (g):",
+        self.lblWeight = Label(self.container2, text="Massa (kg):",
                                font=self.fonte, width=10,
                                bg='white')
         self.lblWeight.pack(side=LEFT)
@@ -96,7 +96,7 @@ class App(Tk):
                                bg='#F5F5F5')
         self.txtWeight.pack(side=LEFT)
 
-        self.lblHeigth = Label(self.container3, text="Altura (cm):",
+        self.lblHeigth = Label(self.container3, text="Altura (m):",
                                font=self.fonte, width=10,
                                bg='white')
         self.lblHeigth.pack(side=LEFT)

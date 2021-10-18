@@ -2,7 +2,7 @@ import socket
 import pickle
 
 host = socket.gethostname()
-port = 50000
+port = 49000
 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -24,8 +24,6 @@ while True:
         h = float(data["height"])
 
         imcs = {}
-        h = h/100
-        w = w/100
         imcs['imc'] = w/(h*h)
         print("IMC calculado com sucesso!")
 
