@@ -1,5 +1,4 @@
-## P7 Info - SOR
-Atividades
+## P7 Info - Clara Lívia Moura de Oliveira
 
 
-# Olá, eu sou a Clara Lívia! 👋
+# Atividade de Sistemas Operacionais de Redes 💻
