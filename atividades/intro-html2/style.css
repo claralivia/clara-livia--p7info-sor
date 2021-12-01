@@ -1,0 +1,55 @@
+body{
+    font-family: "Helvetica";
+    background-color: #A9A9A9;
+}
+h1{
+    padding: 20px;
+    background-color: #363636;
+    border-radius: 10px 20px;
+    color: white;
+}
+h2{
+    color: #363636;
+}
+ul{
+    color: white;
+}
+a{
+    color: white;
+    text-align: center;
+}
+form{
+    color: white;
+}
+button{
+    background-color: #363636;
+    color: white;
+}
+footer{
+    padding: 30px;
+    background-color: #363636;
+    color: white;
+    text-align: center;
+    border-radius: 10px 20px;
+    font-size: 10pt;
+}
+
+#div_left{
+    width: 30%;
+    float: left;
+    padding: 20px;
+}
+#div_right{
+    width: 70%;
+    float: rigth;
+    padding: 50px;
+}
+#login{
+    padding: 20px;
+}
+#github{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+}
