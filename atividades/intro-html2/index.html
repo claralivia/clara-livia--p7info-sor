@@ -14,6 +14,7 @@
     h1{
     padding: 20px;
     background-color: #363636;
+    border-radius: 10px 20px;
     color: white;
     }
     h2{
@@ -24,6 +25,7 @@
     }
     a{
         color: white;
+        text-align: center;
     }
     form{
         color: white;
@@ -33,42 +35,72 @@
         color: white;
     }
     footer{
-        padding: 20px;
+        padding: 30px;
         background-color: #363636;
         color: white;
         text-align: center;
+        border-radius: 10px 20px;
         font-size: 10pt;
+    }
+    #div_left{
+        width: 30%;
+        float: left;
+        padding: 20px;
+    }
+    #div_right{
+        width: 70%;
+        float: rigth;
+        padding: 50px;
+    }
+    #login{
+        padding: 20px;
+    }
+    #github{
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10em;
     }
 </style>
 <body>
+    <h1>Login:</h1>
+    <div id="login">
+        <form>
+            Your name: 
+            <input type="text">
+            Your id:
+            <input type="number"> 
+            Your password: 
+            <input type="password">
+            <button>Send</button>
+        </form>
+    </div>
+
     <h1>Hi, I'm Clara Lívia</h1>
-    <p><img src="MEMOJI.png" width="200px"/></p>
-    
-    <h2>Facts about me:</h2>
 
-    <ul>
-        <li>I'm 18 years old</li>
-        <li>I'm from Fortaleza</li>
-        <li>I want to major in Computer Science</li>
-        <li>I'm currently studying Graphic Design</li>
-    </ul>
-    
-    <h2>This is my GitHub:</h2>
-    <a href="https://github.com/claralivia">https://github.com/claralivia</a>
+    <div id="center">
+        <div id="div_left">
+            <p><img src="MEMOJI.png" width="200px"/></p>
+        </div>
+        
+        <div id="div_right">
+            <h2>Facts about me:</h2>
 
-    <h2>Login:</h2>
-    <form>
-        Your name: 
-        <input type="text">
-        Your id:
-        <input type="number"> 
-        Your password: 
-        <input type="password">
-        <button>Send</button>
-    </form>
-    <p>  </p>
+            <ul>
+                <li>I'm 18 years old</li>
+                <li>I'm from Fortaleza</li>
+                <li>I want to major in Computer Science</li>
+                <li>I'm currently studying Graphic Design</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>This is my GitHub:</h1>
+    <div id="github">
+        <a href="https://github.com/claralivia">https://github.com/claralivia</center></a>
+    </div>
 
 </body>
 
-<footer>Intro HTML 2</footer>
+<footer>Intro HTML 2 by Clara Lívia</footer>
 </html>
