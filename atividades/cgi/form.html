@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Medidas</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">Conversor de Medidas</div>
+    <div class="center">
+        <div class="medidas">
+            <form action="cgi-bin/result.py" method="post">
+                <div class="forms temperatura">
+                    <div class="title" name="temperatura">Temperatura: </div></br>
+                    <div class="infos">Valor:</div> </br>
+                    <input class="valor" type="number" name="valor"></br>
+                    <div class="infos">Quero converter:</div> </br>
+                    <select id="deTemp">
+                        <option value="">Escolha uma opção</option>
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select></br>
+                    <div class="infos">Para:</div> </br>
+                    <select id="paraTemp">
+                        <option value="">Escolha uma opção</option>
+                        <option value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select></br>
+                    <button>Enviar</button>
+                </div>
+                <div class="forms comprimento">
+                    <div class="title">Comprimento: </div></br>
+                    <div class="infos">Valor:</div> </br>
+                    <input class="valor" type="number" name="value"></br>
+                    <div class="infos">Quero converter:</div> </br>
+                    <select id="De">
+                        <option value="Cm">Centímetros (Cm)</option>
+                        <option value="m">Metros (m)</option>
+                        <option value="Km">Quilômetros (Km)</option>
+                    </select></br>
+                    <div class="infos">Para:</div> </br>
+                    <select id="Para">
+                        <option value="Cm">Centímetros (Cm)</option>
+                        <option value="m">Metros (m)</option>
+                        <option value="Km">Quilômetros (Km)</option>
+                    </select></br>
+                    <button>Enviar</button>
+                </div>
+                <div class="forms massa">
+                    <div class="title">Massa: </div></br>
+                    <div class="infos">Valor:</div> </br>
+                    <input class="valor" type="number" name="value"></br>
+                    <div class="infos">Quero converter:</div> </br>
+                    <select name="De">
+                        <option value="Mg">Miligrama (Mg)</option>
+                        <option value="g">Grama (g)</option>
+                        <option value="Kg">Quilograma (Kg)</option>
+                    </select></br>
+                    <div class="infos">Para:</div> </br>
+                    <select name="Para">
+                        <option value="Mg">Miligrama (Mg)</option>
+                        <option value="g">Grama (g)</option>
+                        <option value="Kg">Quilograma (Kg)</option>
+                    </select></br>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <p></p>
+    <div class="footer">Developed by Clara Lívia</div>
+</body>
+</html>

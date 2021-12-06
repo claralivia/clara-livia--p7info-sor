@@ -1,0 +1,110 @@
+body{
+    font-family: "Montserrat";
+    margin: 0px;
+}
+
+button{
+    background-color: #707070;
+    color: #FFF;
+    border-radius: 10px;
+    height: 30px;
+    line-height: 15px;
+    width: 60px;
+    cursor: pointer;
+    border: none;
+
+}
+select{
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    border-color: #707070;
+    border-radius: 20px;
+    color: #707070;
+    padding-left: 10px;
+}
+form{
+    display: flex;
+}
+
+.header{
+    background-color: #707070;
+    font-size: 30pt;
+    font-weight: bolder;
+    color: #FFF;
+    border-radius: 0px 0px 30px 30px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.center{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medidas{
+    display: flex;
+}
+
+.forms{
+    background-color: #C2C0C0;
+    border-radius: 60px;
+    margin: 50px;
+    height: 400px;
+    width: 300px;
+}
+
+.temperatura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.massa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comprimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+.infos{
+    color: #707070;
+    font-weight: 600;
+}
+
+.footer{
+    background-color: #707070;
+    font-size: 10pt;
+    color: #FFF;
+    border-radius: 30px 30px 0px 0px ;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.valor{
+    width: 185px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    color: #707070;
+    padding-left: 10px;
+}
