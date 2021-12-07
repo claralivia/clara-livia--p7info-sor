@@ -1,5 +1,5 @@
 body{
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Helvetica";
     margin: 0px;
 }
 
@@ -14,6 +14,7 @@ button{
     border: none;
 
 }
+
 select{
     width: 200px;
     height: 30px;
@@ -25,7 +26,18 @@ select{
 }
 form{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+a{
+    color: #FFF;
+    text-decoration:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .header{
     background-color: #707070;
@@ -34,28 +46,31 @@ form{
     color: #FFF;
     border-radius: 0px 0px 30px 30px;
     height: 130px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
 
+
 .center{   
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
 
 .medidas{
-    display: flex;
+    display: block;
 }
 
 .forms{
     background-color: #C2C0C0;
     border-radius: 60px;
-    margin: 50px;
+    margin: 45px;
     height: 400px;
     width: 300px;
+    border: 1px solid #707070;
 }
 
 .temperatura{
@@ -64,6 +79,7 @@ form{
     justify-content: center;
     align-items: center;
 }
+
 .massa{
     display: flex;
     flex-direction: column;
@@ -76,28 +92,17 @@ form{
     justify-content: center;
     align-items: center;
 }
+
 .title{
     color: #FFF;
     font-size: 20px;
     font-weight: bold;
 }
+
 .infos{
     color: #707070;
     font-weight: 600;
 }
-
-.footer{
-    background-color: #707070;
-    font-size: 10pt;
-    color: #FFF;
-    border-radius: 30px 30px 0px 0px ;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
 
 .valor{
     width: 185px;
@@ -107,4 +112,18 @@ form{
     border-radius: 20px;
     color: #707070;
     padding-left: 10px;
+}
+
+
+.footer{
+    background-color: #707070;
+    font-size: 10pt;
+    color: #FFF;
+    border-radius: 30px 30px 0px 0px ;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }

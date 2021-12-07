@@ -10,67 +10,71 @@
     <div class="header">Conversor de Medidas</div>
     <div class="center">
         <div class="medidas">
-            <form action="cgi-bin/result.py" method="post">
+            <form class="formulario" action="" method="">
                 <div class="forms temperatura">
                     <div class="title" name="temperatura">Temperatura: </div></br>
                     <div class="infos">Valor:</div> </br>
-                    <input class="valor" type="number" name="valor"></br>
+                    <input class="valor um" type="text" placeholder="Informe o valor" name="valorUm" id="valorUm"></br>
                     <div class="infos">Quero converter:</div> </br>
-                    <select id="deTemp">
-                        <option value="">Escolha uma opção</option>
-                        <option value="Celsius">Celsius</option>
-                        <option value="Fahrenheit">Fahrenheit</option>
-                        <option value="Kelvin">Kelvin</option>
+                    <select id="deTemp" name="deTemp">
+                        <option value="0">Escolha uma opção</option>
+                        <option value="1">Celsius (°C)</option>
+                        <option value="2">Fahrenheit (°F)</option>
+                        <option value="3">Kelvin (K)</option>
                     </select></br>
                     <div class="infos">Para:</div> </br>
-                    <select id="paraTemp">
-                        <option value="">Escolha uma opção</option>
-                        <option value="Celsius">Celsius</option>
-                        <option value="Fahrenheit">Fahrenheit</option>
-                        <option value="Kelvin">Kelvin</option>
+                    <select id="paraTemp" name="paraTemp">
+                        <option value="0">Escolha uma opção</option>
+                        <option value="1">Celsius (°C)</option>
+                        <option value="2">Fahrenheit (°F)</option>
+                        <option value="3">Kelvin (K)</option>
                     </select></br>
-                    <button>Enviar</button>
+                    <button name="button" value="1" onclick="analisar('1')">Enviar</button>
                 </div>
                 <div class="forms comprimento">
                     <div class="title">Comprimento: </div></br>
                     <div class="infos">Valor:</div> </br>
-                    <input class="valor" type="number" name="value"></br>
+                    <input class="valor dois" type="number" placeholder="Informe o valor" name="valorDois" id="valorDois"></br>
                     <div class="infos">Quero converter:</div> </br>
-                    <select id="De">
-                        <option value="Cm">Centímetros (Cm)</option>
-                        <option value="m">Metros (m)</option>
-                        <option value="Km">Quilômetros (Km)</option>
+                    <select id="deComp" name="deComp">
+                        <option value="0">Escolha uma opção</option>
+                        <option value="1">Centímetros (Cm)</option>
+                        <option value="2">Metros (m)</option>
+                        <option value="3">Quilômetros (Km)</option>
                     </select></br>
                     <div class="infos">Para:</div> </br>
-                    <select id="Para">
-                        <option value="Cm">Centímetros (Cm)</option>
-                        <option value="m">Metros (m)</option>
-                        <option value="Km">Quilômetros (Km)</option>
+                    <select id="paraComp" name="paraComp">
+                        <option value="0">Escolha uma opção</option>
+                        <option value="1">Centímetros (Cm)</option>
+                        <option value="2">Metros (m)</option>
+                        <option value="3">Quilômetros (Km)</option>
                     </select></br>
-                    <button>Enviar</button>
+                    <button name="button" value="2" onclick="analisar(value)">Enviar</button>
                 </div>
                 <div class="forms massa">
                     <div class="title">Massa: </div></br>
                     <div class="infos">Valor:</div> </br>
-                    <input class="valor" type="number" name="value"></br>
+                    <input class="valor tres" type="number" placeholder="Informe o valor" name="valorTres" id="valorTres"></br>
                     <div class="infos">Quero converter:</div> </br>
-                    <select name="De">
-                        <option value="Mg">Miligrama (Mg)</option>
-                        <option value="g">Grama (g)</option>
-                        <option value="Kg">Quilograma (Kg)</option>
+                    <select id="deMassa" name="deMassa">
+                        <option value="0">Escolha uma opção</option>
+                        <option value="1">Miligrama (Mg)</option>
+                        <option value="2">Grama (g)</option>
+                        <option value="3">Quilograma (Kg)</option>
                     </select></br>
                     <div class="infos">Para:</div> </br>
-                    <select name="Para">
-                        <option value="Mg">Miligrama (Mg)</option>
-                        <option value="g">Grama (g)</option>
-                        <option value="Kg">Quilograma (Kg)</option>
+                    <select id="paraMassa" name="paraMassa">
+                        <option value="0">Escolha uma opção</option>
+                        <option value="1">Miligrama (Mg)</option>
+                        <option value="2">Grama (g)</option>
+                        <option value="3">Quilograma (Kg)</option>
                     </select></br>
-                    <button>Enviar</button>
+                    <button name="button" value="3" onclick="analisar('3')">Enviar</button>
                 </div>
             </form>
         </div>
     </div>
-    <p></p>
-    <div class="footer">Developed by Clara Lívia</div>
+    <script src="script.js"></script>
+    <div class="footer"><a href="https://github.com/claralivia">Desenvolvido por Clara Lívia</a></div>
 </body>
 </html>

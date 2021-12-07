@@ -1,29 +1,66 @@
-let select = document.querySelector('deTemp');
-let select2 = document.querySelector('paraTemp');
-let valor = document.querySelector('valor');
-let para = document.querySelector('p');
+let element = document.querySelector('.formulario');
 
-select.addEventListener('change', setWeather);
-select2.addEventListener('change', setWeather);
-let valorFinal = 0;
+function analisar(n){
+  
+  //Temperatura
+  if (n === '1'){
+    var valorUm = document.querySelector('#valorUm').value;
+    let deTemp = document.querySelector('#deTemp').value;
+    let paraTemp = document.querySelector('#paraTemp').value;
 
-function setWeather() {
-  var choice = select.value;
-  var choice2 = select2.value;
+      if (valorUm === ''){
+          alert("Você não digitou nada!");
+      }
+      else if (deTemp === '0'){
+          alert("Campo QUERO CONVERTER vazio!");
+      }
+      else if (paraTemp === '0'){
+        alert("Campo PARA vazio!");
+      }
+      else{
+        element.setAttribute('action','cgi-bin/result.py');
+        element.setAttribute('method','post');
+      }
+  }
 
-  if (choice === 'Celsius') {
-    if (choice2 === 'Celsius') {
-        valorFinal == valor*2;
-        para.textContent = valorFinal;
-    } else if (choice2 === 'Fahrenheit'){
-        valorFinal == valor*3;
-        para.textContent = 'Olá';
-    }else {
-        valorFinal == valor*2;
-        para.textContent = valorFinal;
+  //Comrprimento
+  else if (n === '2'){
+    var valorDois = document.querySelector('#valorDois').value;
+    let deComp = document.querySelector('#deComp').value;
+    let paraComp = document.querySelector('#paraComp').value;
+
+    if (valorDois === ''){
+        alert("Você não digitou nada!");
     }
-  } else if (choice === 'Fahrenheit') {
-    para.textContent = 'Rain is falling outside; take a rain coat and a brolly, and don\'t stay out for too long.';
-  } else{
-    para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
-  }}
+    else if (deComp === '0'){
+        alert("Campo QUERO CONVERTER vazio!");
+    }
+    else if (paraComp === '0'){
+      alert("Campo PARA vazio!");
+    }else{
+      element.setAttribute('action','cgi-bin/result.py');
+      element.setAttribute('method','post');
+    }
+  }
+
+  //Massa
+  else if (n === '3'){
+    var valorTres = document.querySelector('#valorTres').value;
+    let deMassa = document.querySelector('#deMassa').value;
+    let paraMassa = document.querySelector('#paraMassa').value;
+
+    if (valorTres === ''){
+        alert("Você não digitou nada!");
+    }
+    else if (deMassa === '0'){
+        alert("Campo QUERO CONVERTER vazio!");
+    }
+    else if (paraMassa === '0'){
+      alert("Campo PARA vazio!");
+    }
+    else{
+      element.setAttribute('action','cgi-bin/result.py');
+      element.setAttribute('method','post');
+    }
+  }
+}
