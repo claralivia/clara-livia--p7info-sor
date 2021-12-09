@@ -37,20 +37,24 @@ a{
     justify-content: center;
     align-items: center;
 }
-
-
-.header{
-    background-color: #707070;
+img{
+    width: 20%;
+    float: left;
+}
+.conversao{
     font-size: 30pt;
     font-weight: bolder;
     color: #FFF;
+    padding-right: 50px;
+}
+.header{
+    background-color: #707070;
     border-radius: 0px 0px 30px 30px;
     height: 130px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 

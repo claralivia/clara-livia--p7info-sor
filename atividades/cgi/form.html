@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Conversor de Medidas</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 
 <body>
-    <div class="header">Conversor de Medidas</div>
+    <div class="header"> 
+        <div class="image"><img src="images/favicon.png"/></div>
+        <div class="conversao">Conversor de Medidas</div>
+        
+    </div>
     <div class="center">
         <div class="medidas">
             <form class="formulario" action="" method="">
@@ -34,40 +39,40 @@
                 <div class="forms comprimento">
                     <div class="title">Comprimento: </div></br>
                     <div class="infos">Valor:</div> </br>
-                    <input class="valor dois" type="number" placeholder="Informe o valor" name="valorDois" id="valorDois"></br>
+                    <input class="valor dois" type="text" placeholder="Informe o valor" name="valorDois" id="valorDois"></br>
                     <div class="infos">Quero converter:</div> </br>
                     <select id="deComp" name="deComp">
                         <option value="0">Escolha uma opção</option>
-                        <option value="1">Centímetros (Cm)</option>
+                        <option value="1">Centímetros (cm)</option>
                         <option value="2">Metros (m)</option>
-                        <option value="3">Quilômetros (Km)</option>
+                        <option value="3">Quilômetros (km)</option>
                     </select></br>
                     <div class="infos">Para:</div> </br>
                     <select id="paraComp" name="paraComp">
                         <option value="0">Escolha uma opção</option>
-                        <option value="1">Centímetros (Cm)</option>
+                        <option value="1">Centímetros (cm)</option>
                         <option value="2">Metros (m)</option>
-                        <option value="3">Quilômetros (Km)</option>
+                        <option value="3">Quilômetros (km)</option>
                     </select></br>
                     <button name="button" value="2" onclick="analisar(value)">Enviar</button>
                 </div>
                 <div class="forms massa">
                     <div class="title">Massa: </div></br>
                     <div class="infos">Valor:</div> </br>
-                    <input class="valor tres" type="number" placeholder="Informe o valor" name="valorTres" id="valorTres"></br>
+                    <input class="valor tres" type="text" placeholder="Informe o valor" name="valorTres" id="valorTres"></br>
                     <div class="infos">Quero converter:</div> </br>
                     <select id="deMassa" name="deMassa">
                         <option value="0">Escolha uma opção</option>
-                        <option value="1">Miligrama (Mg)</option>
+                        <option value="1">Miligrama (mg)</option>
                         <option value="2">Grama (g)</option>
-                        <option value="3">Quilograma (Kg)</option>
+                        <option value="3">Quilograma (kg)</option>
                     </select></br>
                     <div class="infos">Para:</div> </br>
                     <select id="paraMassa" name="paraMassa">
                         <option value="0">Escolha uma opção</option>
-                        <option value="1">Miligrama (Mg)</option>
+                        <option value="1">Miligrama (mg)</option>
                         <option value="2">Grama (g)</option>
-                        <option value="3">Quilograma (Kg)</option>
+                        <option value="3">Quilograma (kg)</option>
                     </select></br>
                     <button name="button" value="3" onclick="analisar('3')">Enviar</button>
                 </div>

@@ -1,3 +1,5 @@
+# coding: latin-1
+
 #!/usr/bin/python
 import cgitb, cgi
 cgitb.enable()
@@ -14,30 +16,30 @@ if button == 1:
     if deTemp == '1':
         if paraTemp == '1':
             valor = valorUm
-            tipo = 'C'
+            tipo = '°C'
         elif paraTemp == '2':
             valor = (valorUm * (9/5)) + 32
-            tipo = 'F'
+            tipo = '°F'
         elif paraTemp == '3':
             valor = valorUm + 273.15
             tipo = 'K'
     elif deTemp == '2':
         if paraTemp == '1':
             valor = (valorUm - 32)*(5/9)
-            tipo = 'C'
+            tipo = '°C'
         elif paraTemp == '2':
             valor = valorUm
-            tipo = 'F'
+            tipo = '°F'
         elif paraTemp == '3':
             valor = (valorUm - 32)*(5/9)+273.15
             tipo = 'K'
     elif deTemp == '3':
         if paraTemp == '1':
             valor = valorUm-273.15
-            tipo = 'C'
+            tipo = '°C'
         elif paraTemp == '2':
             valor = (valorUm-273.15)*(9/5)+32
-            tipo = 'F'
+            tipo = '°F'
         elif paraTemp == '3':
             valor = valorUm
             tipo = 'K'
@@ -51,33 +53,33 @@ if button == 2:
     if deComp == '1':
         if paraComp == '1':
             valor = valorDois
-            tipo = 'Cm'
+            tipo = 'cm'
         elif paraComp == '2':
             valor = valorDois/100
             tipo = 'm'
-        elif paraTemp == '3':
+        elif paraComp == '3':
             valor = valorDois/100000
-            tipo = 'Km'
+            tipo = 'km'
     elif deComp == '2':
         if paraComp == '1':
             valor = valorDois*100
-            tipo = 'Cm'
+            tipo = 'cm'
         elif paraComp == '2':
             valor = valorDois
             tipo = 'm'
         elif paraComp == '3':
-            valor = valorDois*1000
-            tipo = 'Km'
+            valor = valorDois/1000
+            tipo = 'km'
     elif deComp == '3':
         if paraComp == '1':
             valor = valorDois*100000
-            tipo = 'Cm'
+            tipo = 'cm'
         elif paraComp == '2':
             valor = valorDois*1000
             tipo = 'm'
         elif paraComp == '3':
             valor = valorDois
-            tipo = 'Km'
+            tipo = 'km'
 
 
 #MASSA:
@@ -88,34 +90,36 @@ if button == 3:
     if deMassa == '1':
         if paraMassa == '1':
             valor = valorTres
-            tipo = 'Mg'
+            tipo = 'mg'
         elif paraMassa == '2':
             valor = valorTres/1000
             tipo = 'g'
         elif paraMassa == '3':
             valor = valorTres/1000000
-            tipo = 'Kg'
+            tipo = 'kg'
     elif deMassa == '2':
         if paraMassa == '1':
             valor = valorTres*1000
-            tipo = 'Mg'
+            tipo = 'mg'
         elif paraMassa == '2':
             valor = valorTres
             tipo = 'g'
         elif  paraMassa == '3':
             valor = valorTres/1000
-            tipo = 'Kg'
+            tipo = 'kg'
     elif deMassa == '3':
         if paraMassa == '1':
             valor = valorTres/1000000
-            tipo = 'Mg'
+            tipo = 'kg'
         elif paraMassa == '2':
             valor = valorTres*1000
             tipo = 'g'
         elif paraMassa == '3':
             valor = valorTres
             tipo = 'Kg'
-            
+
+valor = str(valor).replace('.', ',')
+
 
 print("Content-Type:text/html\r\n\r\n")
 print("""
@@ -182,10 +186,10 @@ print('<body>')
 print('<div class="header">Conversor de Medidas</div')
 print('<div class="center">')
 print('<form>')
-print('<div class="resultado">Resultado:<br/> %f %s</div>' % (valor, tipo))
+print('<div class="resultado">O resultado é:<br/> %s %s</div>' % (valor, tipo))
 print('</form>')
 print('</div>')
-print('<div class="footer"><a href="https://github.com/claralivia">Desenvolvido por Clara Livia</a></div>')
+print('<div class="footer"><a href="https://github.com/claralivia">Desenvolvido por Clara Lívia</a></div>')
 print('</body>')
 print('</html>')
         
